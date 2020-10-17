@@ -1,0 +1,44 @@
+.carContainer {
+  background-color: #f0f0f0;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.actions button {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.actions button:last-child {
+  margin-top: 5px;
+  background-color: greenyellow;
+}
+
+.actions button:hover {
+  background-color: #dce4cf;
+}
+
+.actions button:last-child:hover {
+  background-color: rgb(148, 212, 28);
+}
+

@@ -1,0 +1,22 @@
+thead {
+  text-transform: uppercase;
+  background-color: rgb(219, 219, 219);
+}
+
+td {
+  padding: 5px 10px;
+}
+
+table {
+  border: 1px solid gray;
+}
+
+.comparatorContainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+tr:hover {
+  background-color: rgb(204, 214, 195);
+}
