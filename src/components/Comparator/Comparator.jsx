@@ -6,11 +6,13 @@ class Comparator extends React.Component {
   renderCars = () => (
     <table>
       <thead>
-        <td>Creator</td>
-        <td>Model</td>
-        <td>Year</td>
-        <td>KM</td>
-        <td>Price</td>
+        <tr>
+          <th>Creator</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>KM</th>
+          <th>Price</th>
+        </tr>
       </thead>
       <tbody>
         {this.renderRows()}
@@ -21,7 +23,7 @@ class Comparator extends React.Component {
   renderRows = () => {
     const { MarketStore: { compareList, handleCompareList } } = this.props;
 
-    return compareList.map(car => (<tr>
+    return compareList.map(car => (<tr key={car.id}>
       <td>{car.creator}</td>
       <td>{car.model}</td>
       <td>{car.year}</td>
